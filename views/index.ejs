@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Locator</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div class="main">
+<h1><a href="http://localhost:3000">IP Address Locator</a></h1>
+<p>
+    Discover comprehensive details about any IP address with our user-friendly IP lookup tool. Simply enter an IP address to access in-depth information including the IP itself, its version (IPv4 or IPv6), geographic location, longitude and latitude coordinates, region and region code, country and country code, and much more. Our platform provides accurate and real-time data, making it easy to understand the origin and characteristics of any IP address. Ideal for cybersecurity professionals, web developers, and anyone curious about network information, our service is your go-to resource for IP address insights.</p>
+
+    <div class="search-ip">
+    <form method="post">
+        <input name="ip" type="text" id="ip-address" placeholder="Enter your IP Address">
+        <input type="submit" formaction="/search" id="search" value="Search">
+
+    </form>
+</div>
+
+<div class="info">
+
+    <%=content%>
+
+    <%if (ipaddress === true) {%>
+        <h4>IP Address: <%= ip%></h4>
+        <h4>IP Version: <%= version%></h4>
+        <h4>City: <%= city%></h4>
+        <h4>Region: <%= region%></h4>
+        <h4>Region Code: <%= region_code%></h4>
+        <h4>Country: <%= country_name%></h4>
+        <h4>Country Code: <%= country_code%></h4>
+        <h4>Country Capital: <%= country_capital%></h4>
+        <h4>Longitude: <%= longitude%></h4>
+        <h4>Latitude: <%= latitude%></h4>
+        <h4>Currency: <%= currency%></h4>
+        <h4>Postal Code: <%= postal%></h4>
+    <%}%>
+</div>
+
+</div>
+
+    
+</body>
+</html>

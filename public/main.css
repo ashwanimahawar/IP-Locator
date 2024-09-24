@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    font-family: "Roboto Mono", monospace;
+}
+
+body{
+    font-family: "Roboto Mono", monospace;
+    background-image: url("/images/whiteMap.jpg");
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+}
+
+body{
+    margin: 0;
+}
+
+h1, p{
+    color: black;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+}
+p{
+    font-size: 20px;
+    background-color: rgb(230, 230, 230, .4);
+}
+
+.main{
+    width: 60%;
+    margin: 100px auto;
+    font-weight: 900;
+}
+
+#ip-address{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    padding: 10px 5px;
+    padding-left: 50px;
+    width: 40%;
+    height: 40px;
+}
+
+#search{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    padding: 10px 5px;
+    width: 100px;
+    margin-left: -12px;
+    height: 62px;
+}
+
+#ip-address:focus{
+    border-radius: 0px;
+    background-color: black;
+    color: white;
+}
+
+#search:hover{
+    cursor: pointer;
+}
+
+.search-ip{
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.info{
+    font-size: 20px;
+    background-color: rgb(230, 230, 230, .4);
+    min-height: 200px;
+    text-align: center;
+    padding: 10px 10px;
+    text-wrap: wrap;
+}
+
+h4{
+    text-align: left;
+    padding-left: 90px;
+    line-height: 3px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
