@@ -77,7 +77,3 @@ Feel free to submit a pull request for any improvements or bug fixes. Follow the
 3. Make your changes and commit them.
 4. Push the changes to your fork.
 5. Submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
