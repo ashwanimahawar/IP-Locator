@@ -19,6 +19,7 @@ A simple application that provides location information based on an IP address. 
 - **Backend:**
   - Node.js
   - Express.js
+  - Embedded JavaScript
 
 - **API:**
   - [IP Geolocation API](https://ipgeolocation.io/) (or any alternative IP location service you used)
