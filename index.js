@@ -2,11 +2,13 @@
 import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 //PORT and Express APP Initialization
 const port = 3000;
 const app = express();
-const API_URL = "https://ipapi.co/"
 
 //Tell express that the static file are in PUBLIC folder.
 app.use(express.static("public"));
@@ -26,7 +28,7 @@ app.get("/", (req, res) => {
 app.post("/search", async (req, res) => {
     const IP = req.body.ip;
     try{
-        const result = await axios.get(API_URL + IP + "/json/");
+        const result = await axios.get(process.env.API_URL + IP + "/json/");
         res.render("index.ejs", { 
             content : "The information related to entered IP Address is mentioned below:",
             ipaddress: true,
